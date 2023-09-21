@@ -27,10 +27,7 @@ circuit.cz(0, 2)
 circuit.measure(2, 2)
 
 # Simulate the quantum circuit using a local simulator
-#simulator = Aer.get_backend('qasm_simulator')
-compiled_circuit = transpile(circuit, simulator)
-job = execute(compiled_circuit, simulator, shots=1024)
-result = job.result()
+
 
 # Display the measurement results
 counts = result.get_counts()
