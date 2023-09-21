@@ -1,4 +1,3 @@
-#pivotaltracker
 from qiskit import QuantumCircuit, transpile, assemble, Aer, execute
 from qiskit.visualization import plot_bloch_multivector, plot_histogram
 
@@ -12,12 +11,10 @@ circuit.initialize(initial_state, 0)
 # Create entangled Bell pair (qubits 1 and 2)
 circuit.h(1)
 circuit.cx(1, 2)
-#Token: 53974b42220b59eab5185630da896b74 
 
 # Apply a CNOT gate and Hadamard gate to the qubit to be teleported (qubit 0)
 circuit.cx(0, 1)
 circuit.h(0)
-#Project: 2677298
 
 # Measure the qubits to be teleported (qubits 0 and 1)
 circuit.measure([0, 1], [0, 1])
