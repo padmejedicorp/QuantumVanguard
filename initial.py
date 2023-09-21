@@ -21,7 +21,6 @@ circuit.measure([0, 1], [0, 1])
 
 # Apply conditional gates based on measurement outcomes
 circuit.cx(1, 2)
-circuit.cz(0, 2)
 
 
 # Measure the result and store it in a classical bit (qubit 2)
